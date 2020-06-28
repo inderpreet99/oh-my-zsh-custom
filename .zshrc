@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 # Set ZSH_DISABLE_COMPFIX to ensure we load shared completions files with other users through `brew` group
 ZSH_DISABLE_COMPFIX="true"
@@ -73,7 +73,7 @@ ZSH_CUSTOM=/Users/isingh/proj/oh-my-zsh-custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-plugins+=(rbenv)
+plugins+=(rbenv nvm fzf zsh_reload zsh-interactive-cd docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
