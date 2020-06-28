@@ -4,6 +4,9 @@
 # Set ZSH_DISABLE_COMPFIX to ensure we load shared completions files with other users through `brew` group
 ZSH_DISABLE_COMPFIX="true"
 
+# rbenv configuration to allow newer builds of openssl
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/isingh/.oh-my-zsh"
 
@@ -72,6 +75,8 @@ ZSH_CUSTOM=/Users/isingh/proj/oh-my-zsh-custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+
+plugins+=(rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
