@@ -4,9 +4,6 @@
 # Set ZSH_DISABLE_COMPFIX to ensure we load shared completions files with other users through `brew` group
 ZSH_DISABLE_COMPFIX="true"
 
-# rbenv configuration to allow newer builds of openssl
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/isingh/.oh-my-zsh"
 
