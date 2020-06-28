@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Set ZSH_DISABLE_COMPFIX to ensure we load shared completions files with other users through `brew` group
+ZSH_DISABLE_COMPFIX="true"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/isingh/.oh-my-zsh"
 
